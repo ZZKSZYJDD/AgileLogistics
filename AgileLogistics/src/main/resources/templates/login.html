@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" >
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>login</title>
+    <script src="js/login.js"></script>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_1383248_bgvg9h6s7jn.css">
+</head>
+
+<body>
+    <div class="background">
+        <div class="box-background">
+
+            <div class="card">
+                <div class="head">
+                    <div class="header"></div>
+                </div>
+                <div class="form-box">
+                    <div class="former">
+                        <div class="former-hand"> <a onclick="loginBox()">登录</a><a onclick="registerBox()">注册</a></div>
+                        <div class="error" th:text="${errorText}"></div>
+                        <form action="/login" id="loginFrom" style="display: block">
+                            <div class="inner">
+
+                                <em class="icon-icons-user iconfont" ><input type="text" name="usename" class="input"
+                                        placeholder="账号" /></em>
+
+                            </div>
+                            <div class="inner">
+                                <em class="iconfont icon-mima"><input type="password" name="pwd" class="input"
+                                        placeholder="密码" /> </em>
+
+
+                            </div>
+                            <div class="kaptcha-box">
+                                <img class="kaptcha-img">
+                                </img>
+                                <input class="kaptcha-input input">
+                            </div>
+                            <br><input class="button-box" type="submit" value="登录" />
+
+
+                        </form>
+                        <form action="/register" id="registerForm" style="display: none">
+                            <div class="inner">
+
+                                <em class="icon-icons-user iconfont" ><input type="text" name="usename" class="input"
+                                                                             placeholder="账号" /></em>
+
+
+
+                            </div>
+                            <div class="inner">
+                                <em class="iconfont icon-mima"><input type="password" name="pwd" class="input"
+                                                                      placeholder="密码" /> </em>
+
+                            </div>
+                            <br>
+
+
+                            <div class="kaptcha-box">
+                                <img class="kaptcha-img">
+                                </img>
+                                <input class="kaptcha-input input">
+                            </div>
+
+
+                            <input class="button-box" type="submit" value="注册"  />
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
+</html>
