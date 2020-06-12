@@ -1,7 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="70fc8163-99af-4007-ae5b-35986d9ef02e" name="Default Changelist" comment="" />
+    <list default="true" id="70fc8163-99af-4007-ae5b-35986d9ef02e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_5_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_spring_boot_autoconfigure_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_spring_boot_starter_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_penggle_kaptcha_2_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jhlabs_filters_2_0_235.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_4_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_bootstrap_4_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_jquery_3_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_popper_js_1_16_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AgileLogistics/src/main/java/com/gardenbaby/AgileLogistics/control/EquipmentControl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AgileLogistics/src/main/java/com/gardenbaby/AgileLogistics/control/RegionControl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AgileLogistics/src/main/java/com/gardenbaby/AgileLogistics/dao/Mapper/ApplyMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AgileLogistics/src/main/java/com/gardenbaby/AgileLogistics/dao/Mapper/EquipmentMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AgileLogistics/src/main/java/com/gardenbaby/AgileLogistics/dao/Mapper/RegionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AgileLogistics/src/main/java/com/gardenbaby/AgileLogistics/dao/Mapper/RepairMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AgileLogistics/src/main/java/com/gardenbaby/AgileLogistics/dao/Mapper/UsersMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AgileLogistics/src/main/java/com/gardenbaby/AgileLogistics/dao/Service/EquipmentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AgileLogistics/src/main/java/com/gardenbaby/AgileLogistics/dao/Service/RegionPageHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AgileLogistics/src/main/java/com/gardenbaby/AgileLogistics/dao/Service/RegionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AgileLogistics/src/main/java/com/gardenbaby/AgileLogistics/dao/dataobject/Apply.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AgileLogistics/src/main/java/com/gardenbaby/AgileLogistics/dao/dataobject/Equipment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AgileLogistics/src/main/java/com/gardenbaby/AgileLogistics/dao/dataobject/Region.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AgileLogistics/src/main/java/com/gardenbaby/AgileLogistics/dao/dataobject/Repair.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AgileLogistics/src/main/java/com/gardenbaby/AgileLogistics/tableobject/EquipmentReturn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AgileLogistics/src/main/resources/templates/css/bootstrap-table.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AgileLogistics/src/main/resources/templates/css/bootstrap-table.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AgileLogistics/src/main/resources/templates/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AgileLogistics/src/main/resources/templates/css/main.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AgileLogistics/src/main/resources/templates/data1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AgileLogistics/src/main/resources/templates/js/applybox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AgileLogistics/src/main/resources/templates/js/bootstrap-table-zh-CN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AgileLogistics/src/main/resources/templates/js/equipmentbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AgileLogistics/src/main/resources/templates/js/regionbox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AgileLogistics/src/main/resources/templates/main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AgileLogistics/src/main/resources/templates/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgileLogistics/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AgileLogistics/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgileLogistics/src/main/java/com/gardenbaby/AgileLogistics/AgileLogisticsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/AgileLogistics/src/main/java/com/gardenbaby/AgileLogistics/AgileLogisticsApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgileLogistics/src/main/java/com/gardenbaby/AgileLogistics/control/loginControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/AgileLogistics/src/main/java/com/gardenbaby/AgileLogistics/control/loginControl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgileLogistics/src/main/java/com/gardenbaby/AgileLogistics/dao/UserDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/AgileLogistics/src/main/java/com/gardenbaby/AgileLogistics/dao/Service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgileLogistics/src/main/java/com/gardenbaby/AgileLogistics/dao/UserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgileLogistics/src/main/java/com/gardenbaby/AgileLogistics/dataobject/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/AgileLogistics/src/main/java/com/gardenbaby/AgileLogistics/dao/dataobject/Users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgileLogistics/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/AgileLogistics/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgileLogistics/src/main/resources/templates/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/AgileLogistics/src/main/resources/templates/css/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgileLogistics/src/main/resources/templates/js/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/AgileLogistics/src/main/resources/templates/js/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AgileLogistics/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/AgileLogistics/src/main/resources/templates/login.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,15 +73,41 @@
     <expand />
     <select />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="v8" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1chvmjLLCtJpCnDiMy0S4QNSqji" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/AgileLogistics/src/main/java/com/gardenbaby/AgileLogistics" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/AgileLogistics/src/main/resources/templates/js" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -39,20 +116,26 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\@working-space\idea\AgileLogistics\AgileLogistics\src\main\resources\templates\images" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\@working-space\idea\AgileLogistics\AgileLogistics\src\main\resources\templates\js" />
+      <recent name="D:\@working-space\idea\AgileLogistics\AgileLogistics\src\main\java\com\gardenbaby\AgileLogistics\dataobject" />
+      <recent name="D:\@working-space\idea\AgileLogistics\AgileLogistics\src\main\java\com\gardenbaby\AgileLogistics\dao" />
+      <recent name="D:\@working-space\idea\AgileLogistics\AgileLogistics\src\main\resources\templates\css" />
+      <recent name="D:\@working-space\idea\AgileLogistics\AgileLogistics\src\main\resources\templates" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.gardenbaby.AgileLogistics.dataobject" />
       <recent name="com.gardenbaby.AgileLogistics.dao" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\@working-space\idea\AgileLogistics\AgileLogistics\src\main\java\com\gardenbaby\AgileLogistics" />
-      <recent name="D:\@working-space\idea\AgileLogistics\AgileLogistics\src\main\java\com\gardenbaby\AgileLogistics\dao" />
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\@working-space\idea\AgileLogistics\AgileLogistics\src\main\resources\templates" />
+      <recent name="D:\@working-space\idea\AgileLogistics\AgileLogistics\src\main\resources" />
+      <recent name="D:\@working-space\idea\AgileLogistics\AgileLogistics\src\main\resources\templates\json" />
       <recent name="D:\@working-space\idea\AgileLogistics\AgileLogistics\src\main\resources\templates\js" />
-      <recent name="D:\@working-space\idea\AgileLogistics\AgileLogistics\src\main\resources\templates\css" />
+      <recent name="D:\@working-space\idea\AgileLogistics\AgileLogistics\src\main\resources\templates\images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -67,7 +150,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.AgileLogisticsApplication">
+    <configuration name="regionbox.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/AgileLogistics/src/main/resources/templates/js/regionbox.js" working-dir="$PROJECT_DIR$/AgileLogistics/src/main/resources/templates/js">
+      <method v="2" />
+    </configuration>
     <configuration name="AgileLogisticsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="AgileLogistics" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.gardenbaby.AgileLogistics.AgileLogisticsApplication" />
@@ -75,6 +161,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.regionbox.js" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -86,11 +177,33 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1590993800588</updated>
-      <workItem from="1590993802450" duration="4825000" />
+      <workItem from="1590993802450" duration="10123000" />
+      <workItem from="1591145818603" duration="12279000" />
+      <workItem from="1591231958049" duration="4649000" />
+      <workItem from="1591316085777" duration="16245000" />
+      <workItem from="1591579712045" duration="8792000" />
+      <workItem from="1591595910595" duration="33203000" />
+      <workItem from="1591690014974" duration="2007000" />
+      <workItem from="1591692353381" duration="4082000" />
+      <workItem from="1591856642951" duration="1080000" />
+      <workItem from="1591923389881" duration="16783000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

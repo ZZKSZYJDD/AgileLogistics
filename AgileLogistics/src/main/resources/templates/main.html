@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047) -->
+<html lang="en">
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <meta content="" name="description">
+
+    <meta content="Jekyll v3.8.6" name="generator">
+    <title>花园后勤</title>
+    <!-- 引入bootstrap-table样式 -->
+
+
+    <!-- Bootstrap core CSS -->
+    <!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">-->
+    <!--    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">-->
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" rel="stylesheet">
+    <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+          integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" rel="stylesheet">
+    <link href="https://unpkg.com/bootstrap-table@1.15.3/dist/bootstrap-table.min.css" rel="stylesheet">
+
+    <!-- Favicons -->
+    <link href="https://v4.bootcss.com/docs/assets/img/favicons/apple-touch-icon.png" rel="apple-touch-icon"
+          sizes="180x180">
+    <link href="https://v4.bootcss.com/docs/assets/img/favicons/favicon-32x32.png" rel="icon" sizes="32x32"
+          type="image/png">
+    <link href="https://v4.bootcss.com/docs/assets/img/favicons/favicon-16x16.png" rel="icon" sizes="16x16"
+          type="image/png">
+    <link href="https://v4.bootcss.com/docs/assets/img/favicons/manifest.json" rel="manifest">
+    <link color="#563d7c" href="https://v4.bootcss.com/docs/assets/img/favicons/safari-pinned-tab.svg" rel="mask-icon">
+    <link href="https://v4.bootcss.com/docs/assets/img/favicons/favicon.ico" rel="icon">
+    <!--    <link href="./css/bootstrap-table.min.css" rel="stylesheet">-->
+
+
+    <meta content="/docs/assets/img/favicons/browserconfig.xml" name="msapplication-config">
+    <meta content="#563d7c" name="theme-color">
+
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+
+    <script>
+        function chevron_toggle() {
+            $("#collapseParent").find("span").toggleClass("glyphicon-chevron-up");
+            $("#collapseParent").find("span").toggleClass("glyphicon-chevron-down");
+            $("a.nav-link").removeClass("active");
+
+        }
+
+        function chevron_toggle2() {
+            $("#collapseParent2").find("span").toggleClass("glyphicon-chevron-up");
+            $("#collapseParent2").find("span").toggleClass("glyphicon-chevron-down");
+            $("a.nav-link").removeClass("active");
+
+        }
+    </script>
+    <!-- Custom styles for this template -->
+    <link href="./css/main.css" rel="stylesheet">
+    <style type="text/css">/* Chart.js */
+    @-webkit-keyframes chartjs-render-animation {
+        from {
+            opacity: 0.99
+        }
+        to {
+            opacity: 1
+        }
+    }
+
+    @keyframes chartjs-render-animation {
+        from {
+            opacity: 0.99
+        }
+        to {
+            opacity: 1
+        }
+    }
+
+    .chartjs-render-monitor {
+        -webkit-animation: chartjs-render-animation 0.001s;
+        animation: chartjs-render-animation 0.001s;
+    }</style>
+</head>
+<body>
+
+<nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+    <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">花园后勤</a>
+    <input aria-label="Search" class="form-control form-control-dark w-100" placeholder="Search" type="text">
+    <ul class="navbar-nav px-3">
+        <li class="nav-item text-nowrap">
+            <a class="nav-link" href="#">退出</a>
+        </li>
+    </ul>
+</nav>
+
+<div class="container-fluid">
+    <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+            <div class="sidebar-sticky">
+                <ul class="nav flex-column  nav-tabs" role="menu">
+                    <li class="nav-item ">
+                        <a class="nav-link " data-toggle="tab" href="#home" id="home-tab">
+                            <svg class="feather feather-home" fill="none" height="24" stroke="currentColor"
+                                 stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                                 width="24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                            </svg>
+                            Dashboard <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link collapsed" data-toggle="collapse" href="#docCollapse" id="collapseParent"
+                           onclick="chevron_toggle()">
+                            <svg class="feather feather-layers" fill="none" height="24" stroke="currentColor"
+                                 stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                                 width="24" xmlns="http://www.w3.org/2000/svg">
+                                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                                <polyline points="2 17 12 22 22 17"></polyline>
+                                <polyline points="2 12 12 17 22 12"></polyline>
+                            </svg>
+                            后勤管理
+                            <span class="pull-right glyphicon glyphicon-chevron-down"/>
+                        </a>
+                        <HR SIZE=1 align=center color=#987cb9 width=300>
+                        <ul class="nav nav-tabs  collapse" id="docCollapse" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link fist-tab1" data-toggle="tab" href="#apply-administration-content"
+                                   role="presentation"
+                                   style="width: 254px">
+                                    <svg class="feather feather-file-text" fill="none" height="24" stroke="currentColor"
+                                         stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                         viewBox="0 0 24 24"
+                                         width="24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                        <polyline points="14 2 14 8 20 8"></polyline>
+                                        <line x1="16" x2="8" y1="13" y2="13"></line>
+                                        <line x1="16" x2="8" y1="17" y2="17"></line>
+                                        <polyline points="10 9 9 9 8 9"></polyline>
+                                    </svg>
+                                    设备报修<span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link " data-toggle="tab" href="#box2" style="width: 254px">
+                                    <svg class="feather feather-file-text" fill="none" height="24" stroke="currentColor"
+                                         stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                         viewBox="0 0 24 24"
+                                         width="24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                        <polyline points="14 2 14 8 20 8"></polyline>
+                                        <line x1="16" x2="8" y1="13" y2="13"></line>
+                                        <line x1="16" x2="8" y1="17" y2="17"></line>
+                                        <polyline points="10 9 9 9 8 9"></polyline>
+                                    </svg>
+                                    报修分派<span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link " data-toggle="tab" href="#box3" style="width: 254px">
+                                    <svg class="feather feather-file-text" fill="none" height="24" stroke="currentColor"
+                                         stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                         viewBox="0 0 24 24"
+                                         width="24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                        <polyline points="14 2 14 8 20 8"></polyline>
+                                        <line x1="16" x2="8" y1="13" y2="13"></line>
+                                        <line x1="16" x2="8" y1="17" y2="17"></line>
+                                        <polyline points="10 9 9 9 8 9"></polyline>
+                                    </svg>
+                                    维修管理<span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link " data-toggle="tab" href="#equipment-administration-content"
+                                   style="width: 254px">
+                                    <svg class="feather feather-file-text" fill="none" height="24" stroke="currentColor"
+                                         stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                         viewBox="0 0 24 24"
+                                         width="24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                        <polyline points="14 2 14 8 20 8"></polyline>
+                                        <line x1="16" x2="8" y1="13" y2="13"></line>
+                                        <line x1="16" x2="8" y1="17" y2="17"></line>
+                                        <polyline points="10 9 9 9 8 9"></polyline>
+                                    </svg>
+                                    设备管理<span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link " data-toggle="tab" href="#region-administration-content"
+                                   style="width: 254px">
+                                    <svg class="feather feather-file-text" fill="none" height="24" stroke="currentColor"
+                                         stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                         viewBox="0 0 24 24"
+                                         width="24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                        <polyline points="14 2 14 8 20 8"></polyline>
+                                        <line x1="16" x2="8" y1="13" y2="13"></line>
+                                        <line x1="16" x2="8" y1="17" y2="17"></line>
+                                        <polyline points="10 9 9 9 8 9"></polyline>
+                                    </svg>
+                                    区域管理<span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link collapsed" data-toggle="collapse" href="#docCollapse2" id="collapseParent2"
+                           onclick="chevron_toggle2()">
+                            <svg class="feather feather-users" fill="none" height="24" stroke="currentColor"
+                                 stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                                 width="24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                            人员管理
+                            <span class="pull-right glyphicon glyphicon-chevron-down"/>
+                        </a>
+                        <HR SIZE=1 align=center color=#987cb9 width=300>
+                        <ul class="nav nav-tabs  collapse" id="docCollapse2" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link fist-tab2" data-toggle="tab" href="#box6" style="width: 254px">
+                                    <svg class="feather feather-file-text" fill="none" height="24" stroke="currentColor"
+                                         stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                         viewBox="0 0 24 24"
+                                         width="24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                        <polyline points="14 2 14 8 20 8"></polyline>
+                                        <line x1="16" x2="8" y1="13" y2="13"></line>
+                                        <line x1="16" x2="8" y1="17" y2="17"></line>
+                                        <polyline points="10 9 9 9 8 9"></polyline>
+                                    </svg>
+                                    用户管理<span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link " data-toggle="tab" href="#box7" style="width: 254px">
+                                    <svg class="feather feather-file-text" fill="none" height="24" stroke="currentColor"
+                                         stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                         viewBox="0 0 24 24"
+                                         width="24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                        <polyline points="14 2 14 8 20 8"></polyline>
+                                        <line x1="16" x2="8" y1="13" y2="13"></line>
+                                        <line x1="16" x2="8" y1="17" y2="17"></line>
+                                        <polyline points="10 9 9 9 8 9"></polyline>
+                                    </svg>
+                                    角色管理<span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link " data-toggle="tab" href="#box8" style="width: 254px">
+                                    <svg class="feather feather-file-text" fill="none" height="24" stroke="currentColor"
+                                         stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                         viewBox="0 0 24 24"
+                                         width="24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                        <polyline points="14 2 14 8 20 8"></polyline>
+                                        <line x1="16" x2="8" y1="13" y2="13"></line>
+                                        <line x1="16" x2="8" y1="17" y2="17"></line>
+                                        <polyline points="10 9 9 9 8 9"></polyline>
+                                    </svg>
+                                    权限管理<span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                </ul>
+
+
+            </div>
+        </nav>
+
+        <div class="chartjs-size-monitor"
+             style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;">
+            <div class="chartjs-size-monitor-expand"
+                 style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+                <div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0">
+
+                </div>
+            </div>
+            <div class="chartjs-size-monitor-shrink"
+                 style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+                <div style="position:absolute;width:200%;height:200%;left:0; top:0">
+
+                </div>
+            </div>
+        </div>
+
+        <div id="wecome">
+
+        </div>
+        <div class="tab-content" id="myTabContent">
+
+
+            <div class=" main-box-style tab-pane fade in active" id="home">
+                欢迎使用
+            </div>
+
+            <div class=" main-box-style tab-pane panel-body fade" id="apply-administration-content"
+                 role="tabpanel">
+                <h1>报修管理</h1>
+                <div class="btn-group input-group" id="apply-toolbar" method="get"
+                     role="form" style="width: 737px;">
+                    <button class="btn btn-primary" data-target="#addApplyModal" data-toggle="modal"
+                            id="apply-add">新增报修
+                    </button>
+                    <button class="btn btn-info" id="apply-delect" onclick="deleteApplyData()">删除报修</button>
+                    <button class="btn btn-danger"
+                            id="apply-update" onclick="updateApplyData()">修改报修
+                    </button>
+
+
+                    <input class="form-control" id="applyQueryType" name="selectName" placeholder="状态"
+                           style="width: 68px;"
+                           type="text"/>
+                    <button class="btn btn-success" onclick="selectApplyData()" type="submit">查询</button>
+
+                </div>
+                <table id="applyTable"></table>
+            </div>
+            <div class=" main-box-style tab-pane fade" id="box2">
+                2
+            </div>
+            <div class=" main-box-style tab-pane fade" id="box3">
+                3
+            </div>
+            <div class=" main-box-style tab-pane panel-body fade" id="equipment-administration-content"
+                 role="tabpanel">
+                <h1>设备报修</h1>
+                <div class="btn-group input-group" id="equipment-toolbar" method="get"
+                     role="form" style="width: 737px;">
+                    <button class="btn btn-primary" data-target="#addEquipmentModal" data-toggle="modal"
+                            id="equipment-add">新增设备
+                    </button>
+                    <button class="btn btn-info" id="equipment-delect" onclick="deleteEquipmentData()">删除设备</button>
+                    <button class="btn btn-danger"
+                            id="equipment-update" onclick="updateEquipmentData()">修改设备
+                    </button>
+
+                    <input class="form-control" id="equipmentQueryName" name="selectName" placeholder="设备名称"
+                           style="width: 68px;"
+                           type="text"/>
+                    <input class="form-control" id="equipmentQueryType" name="selectType" placeholder="设备类型"
+                           style="width: 68px;"
+                           type="text"/>
+                    <button class="btn btn-success" onclick="selectEquipmentData()" type="submit">查询</button>
+
+                </div>
+                <table id="equipmentTable"></table>
+            </div>
+            <div aria-labelledby="contact-tab" class=" main-box-style tab-pane panel-body fade"
+                 id="region-administration-content"
+                 role="tabpanel">
+                <h1>区域管理</h1>
+                <div action="getRegionQueryNameData" class="btn-group input-group" id="region-toolbar" method="get"
+                     role="form" style="width: 604px;">
+                    <button class="btn btn-primary" data-target="#addRegionModal" data-toggle="modal"
+                            id="region-add">新增区域
+                    </button>
+                    <button class="btn btn-info" id="region-delect" onclick="deleteRegionData()">删除区域</button>
+                    <button class="btn btn-danger"
+                            id="region-update" onclick="updateRegionData()">修改区域
+                    </button>
+
+                    <input class="form-co ntrol" id="regionQueryName" name="select" placeholder="楼栋"
+                           style="width: 68px;"
+                           type="text"/>
+                    <button class="btn btn-success" onclick="selectRegionData()" type="submit">查询</button>
+
+                </div>
+                <table id="regionTable"></table>
+            </div>
+            <div class=" main-box-style tab-pane fade" id="box6">
+                6
+            </div>
+            <div class=" main-box-style tab-pane fade" id="box7">
+                7
+            </div>
+            <div class=" main-box-style tab-pane fade" id="box8">
+                8
+            </div>
+        </div>
+
+
+    </div>
+</div>
+</div>
+
+<!-- 新增区域的模态框 -->
+<div class="modal fade" id="addRegionModal" role="dialog" tabindex="-2">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <!--                <h3>新增区域</h3>-->
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" id="addRegionForm" method="post">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label" for="inputRegionID">ID</label>
+                        <div class="col-sm-7">
+                            <input class="form-control" id="inputRegionID" name="id" placeholder="id" type="text"/>
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label" for="inputRegionBuilding">楼栋</label>
+                        <div class="col-sm-7">
+                            <input class=" form-control" id="inputRegionBuilding" name="building" placeholder="楼栋"
+                                   type="text"/>
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label" for="inputRegionFloor">楼层</label>
+                        <div class="col-sm-7">
+                            <input class="form-control" id="inputRegionFloor" name="floor" placeholder="楼层"
+                                   type="text"/>
+                        </div>
+
+                    </div>
+
+
+                    <div class="modal-footer">
+                        <button class="btn btn-default" id="conf1" onclick="addRegion()" type="button">确定</button>
+                        <button class="btn btn-default" data-dismiss="modal" type="button" οnclick="resetAddModal()">
+                            取消
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 新增报修的模态框 -->
+<div class="modal fade" id="addApplyModal" role="dialog" tabindex="-1">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <!--                <h3>新增区域</h3>-->
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" id="addApplyForm" method="post">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label" for="inputApplyID">ID</label>
+                        <div class="col-sm-7">
+                            <input class="form-control" id="inputApplyID" name="id" placeholder="id" type="text"/>
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label" for="inputEquipmentName">设备名称</label>
+                        <div class="col-sm-7">
+                            <input class=" form-control" id="inputApplyName" name="name" placeholder="设备名称"
+                                   type="text"/>
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label" for="inputEquipmentType">设备类型</label>
+                        <div class="col-sm-7">
+                            <input class="form-control" id="inputApplyType" name="type" placeholder="设备类型"
+                                   type="text"/>
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label" for="inputEquipmentPersonLiable">责任人</label>
+                        <div class="col-sm-7">
+                            <input class="form-control" id="inputEquipmentPersonLiable" name="personLiable"
+                                   placeholder="责任人"
+                                   type="text"/>
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label" for="inputEquipmentRemarks">备注</label>
+                        <div class="col-sm-7">
+                            <input class="form-control" id="inputEquipmentRemarks" name="remarks" placeholder="备注"
+                                   type="text"/>
+                        </div>
+
+                    </div>
+
+
+                    <div class="modal-footer">
+                        <button class="btn btn-default" id="conf2" onclick="addEquipment()" type="button">确定</button>
+                        <button class="btn btn-default" data-dismiss="modal" type="button" οnclick="resetAddModal()">
+                            取消
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 新增设备的模态框 -->
+<div class="modal fade" id="addEquipmentModal" role="dialog" tabindex="-1">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <!--                <h3>新增区域</h3>-->
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" id="addEquipmentForm" method="post">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label" for="inputEquipmentID">ID</label>
+                        <div class="col-sm-7">
+                            <input class="form-control" id="inputEquipmentID" name="id" placeholder="id" type="text"/>
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label" for="inputEquipmentName">设备名称</label>
+                        <div class="col-sm-7">
+                            <input class=" form-control" id="inputEquipmentName" name="name" placeholder="设备名称"
+                                   type="text"/>
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label" for="inputEquipmentType">设备类型</label>
+                        <div class="col-sm-7">
+                            <input class="form-control" id="inputEquipmentType" name="type" placeholder="设备类型"
+                                   type="text"/>
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label" for="inputEquipmentPersonLiable">责任人</label>
+                        <div class="col-sm-7">
+                            <input class="form-control" id="inputEquipmentPersonLiable" name="personLiable"
+                                   placeholder="责任人"
+                                   type="text"/>
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label" for="inputEquipmentRemarks">备注</label>
+                        <div class="col-sm-7">
+                            <input class="form-control" id="inputEquipmentRemarks" name="remarks" placeholder="备注"
+                                   type="text"/>
+                        </div>
+
+                    </div>
+
+
+                    <div class="modal-footer">
+                        <button class="btn btn-default" id="conf2" onclick="addEquipment()" type="button">确定</button>
+                        <button class="btn btn-default" data-dismiss="modal" type="button" οnclick="resetAddModal()">
+                            取消
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script crossorigin="anonymous"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/bootstrap-table@1.15.3/dist/bootstrap-table.min.js"></script>
+
+
+<script src="./js/bootstrap-table-zh-CN.js"></script>
+<script src="./js/regionbox.js"></script>
+<script +new Date()*1 src="./js/equipmentbox.js?d="></script>
+<script src="./js/applybox.js"></script>
+</body>
+</html>

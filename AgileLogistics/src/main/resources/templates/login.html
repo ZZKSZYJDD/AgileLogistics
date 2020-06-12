@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org" >
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,11 +37,13 @@
 
 
                             </div>
-                            <div class="kaptcha-box">
-                                <img class="kaptcha-img">
-                                </img>
-                                <input class="kaptcha-input input">
-                            </div>
+
+                                <a class="kaptcha-box" href="javascript:reloadCaptcha()">
+                                    <img class="kaptcha-img" id="captchaImg" src="/captcha" />
+
+                                <input class="kaptcha-input input" placeholder="验证码" name="kaptcha">
+                                </a>
+
                             <br><input class="button-box" type="submit" value="登录" />
 
 
